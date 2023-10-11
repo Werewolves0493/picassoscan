@@ -1,0 +1,80 @@
+.earning-section--dividends {
+	.loader-container {
+		display: flex;
+		justify-content: center;
+		padding: 10% 0px;
+	}
+}
+.date-filters {
+	position: relative;
+	.calendar-container {
+		position: absolute;
+		width: 345px;
+		top: 45px;
+	}
+	.input-item,
+	.input-icon--calendar {
+		cursor: pointer;
+	}
+}
+
+.block-info__token-icon img,
+.token-box__icon-1 {
+	object-fit: cover;
+	height: 100%;
+}
+
+.token-block--biger .token-block__icon {
+	height: 32px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.hint-block:hover .tooltip {
+	font-weight: 300;
+	display: block;
+}
+
+.walletconnect-modal__header{
+	img{
+		width: 50%;
+	}
+   p{
+	    width: 50%;
+   }
+}
+
+.block-content {
+	.token-box-wrapper{
+		justify-content: end;
+	}
+}
+.dividents-btns .button--width{
+	min-width: 148px;
+}
+// .earning-section--dividents .switch-box {
+// 	justify-content: flex-end;
+// }
+
+@media screen and (max-width: 1100px) {
+	.earning-block-wrapper {
+		gap: 0 16px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.token-box__name {
+		font-size: 14px;
+	}
+	.earning-stats__item {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 835px){
+	.switch-btns{
+		justify-content: end;
+	}
+	.switch-btns--staking .switch-btns__item{
+		padding: 0 15px;
+	}
+}

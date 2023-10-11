@@ -1,0 +1,114 @@
+// ==========================================:
+.auth-loader-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 10;
+}
+
+.asset-pairs-loader-wrapper,
+.orderbook-loader-wrapper,
+.recent-trades-loader-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+}
+
+.open-orders-history-loader-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	padding: 50px 0;
+}
+.table-loader-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	padding: 50px 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	background: white;
+	z-index: 10;
+}
+
+.lds-dual-ring {
+	display: inline-block;
+	width: 90px;
+	height: 90px;
+
+	&:after {
+		content: ' ';
+		display: block;
+		width: 64px;
+		height: 64px;
+		margin: 8px;
+		border-radius: 50%;
+		border: 6px solid #335be9;
+		border-color: #335be9 transparent #335be9 transparent;
+		animation: lds-dual-ring 1.2s linear infinite;
+	}
+}
+
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.lds-dual-ring-small {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+
+	&:after {
+		content: ' ';
+		display: block;
+		width: 32px;
+		height: 32px;
+		margin: 4px;
+		border-radius: 50%;
+		border: 3px solid #335be9;
+		border-color: #335be9 transparent #335be9 transparent;
+		animation: lds-dual-ring-small 1.2s linear infinite;
+	}
+}
+.table-loader-wrapper {
+	//height: 200px;
+	height: 100%;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	background: white;
+	z-index: 100;
+}
+.table-position {
+	position: relative;
+}
+@keyframes lds-dual-ring-small {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
